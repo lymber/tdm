@@ -1,0 +1,24 @@
+Coisas pendentes:
+
+1. Novas fases;
+
+2. Um menu para o jogo, seleção e naves e teclas e joystick;
+
+3. Fazer os tiros teleguiados "morrerem" depois de um tempo. (colocar um
+   contador que faz eles virarem morto=true quando atinge o tempo
+   limite;
+
+4. Desenhar um cockpit;
+
+5. Aumentar o tempo de carga do tiro triplo;
+
+6. Pensar em delay esperto (anda só depois que o tempo real passou de um
+   valor mínimo);
+
+7. Modo 2 players num mesmo micro (joystick + teclado? dois no mesmo teclado?);
+
+8. Mudança suave nas câmeras;
+
+Coisas já "feitas":
+
+9. Arrumar o input.

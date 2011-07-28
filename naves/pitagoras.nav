@@ -1,0 +1,8 @@
+<atributos arquivo="modelos/pitagoras.3ds" velocidadeMaxima="0.15"/>
+<tiro qualBasico="laser"/>
+<recargaLaser tempo="60"/>
+<recargaMultiplo tempo="150"/>
+<recargaMissil tempo="200"/>
+
+
+

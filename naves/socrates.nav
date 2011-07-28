@@ -1,0 +1,7 @@
+<atributos arquivo="modelos/socrates.3ds" velocidadeMaxima="0.095"/>
+<tiro qualBasico="missil"/>
+<recargaMissil tempo="190"/>
+<recargaLaser tempo="70"/>
+<recargaMultiplo tempo="100"/>
+
+

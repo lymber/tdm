@@ -1,0 +1,10 @@
+<aleatorio maximoInimigos="2" totalInimigos="10">
+<modelo arquivo="modelos/castelo.3ds" />
+<localJogador x="0.0" z="0.0" />
+<possiveisIA medroso="true" corajoso="true" />
+<possiveisNaves pitagoras="true" platao="true" socrates="true"/>
+<localInimigo x="20.0" z="0.0" />
+<localInimigo x="-20.0" z="0.0" />
+<musica arquivo="musicas/putz.ogg"/>
+</aleatorio>
+

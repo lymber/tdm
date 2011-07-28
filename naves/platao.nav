@@ -1,0 +1,7 @@
+<atributos arquivo="modelos/platao.3ds" velocidadeMaxima="0.1"/>
+<tiro qualBasico="multiplo"/>
+<recargaMultiplo tempo="95"/>
+<recargaLaser tempo="80"/>
+
+
+
