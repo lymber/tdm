@@ -36,7 +36,7 @@ These are some of the features we would like to have in this game:
 
 * Local/Network Multiplayer 
 
-* Select levels and missions 
+* Select ships, levels and missions 
 
 A few of them are already supported.
 
