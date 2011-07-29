@@ -27,9 +27,8 @@ int ItemMissil::Mensagem(int msg, void *param)
 //----------------------------------------------------------------------------------
 void ItemMissil::Atualiza(void)
 {
-   ParaEsquerda(true);   
+   ParaEsquerda(true);
    Objeto::Atualiza();
-   
 }
 
 //----------------------------------------------------------------------------------------

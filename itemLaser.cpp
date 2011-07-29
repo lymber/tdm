@@ -27,9 +27,8 @@ int ItemLaser::Mensagem(int msg, void *param)
 //----------------------------------------------------------------------------------
 void ItemLaser::Atualiza(void)
 {
-   ParaEsquerda(true);   
+   ParaEsquerda(true);
    Objeto::Atualiza();
-   
 }
 
 //----------------------------------------------------------------------------------------

@@ -1,10 +1,10 @@
-#include "central.h" 
+#include "central.h"
 
 //-------------------------------------------------------------------------------
 //Retorna o primeiro objeto da lista
 void *Central::PrimeiroObjeto(list<void *>::Iterator *atualListaObjetos)
 {
-   *atualListaObjetos = listaObjetos.begin();   
+   *atualListaObjetos = listaObjetos.begin();
    return *(*atualListaObjetos);
 }
 
@@ -13,7 +13,7 @@ void *Central::PrimeiroObjeto(list<void *>::Iterator *atualListaObjetos)
 void *Central::ProximoObjeto(list<void *>::Iterator *atualListaObjetos)
 {
    if (*atualListaObjetos == listaObjetos.getLast()) return NULL;
-  
+
    (*atualListaObjetos)++;
    return *(*atualListaObjetos);
 }
