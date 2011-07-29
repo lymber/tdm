@@ -80,7 +80,7 @@ class Fase
    /// \brief Lê a descrição da fase a partir de um arquivo
    ///
    /// \param arquivo Nome do arquivo a ser lido
-   void LeArquivo(char *arquivo);
+   void LeArquivo(const char *arquivo);
    
    public:
       /// \brief Quantos inimigos ainda precisam ser mortos
@@ -105,7 +105,7 @@ class Fase
       ///
       /// \param arquivo Nome do arquivo com a descrição da fase
       /// \param centralAux Onde estão os objetos
-      Fase(char *arquivo, Central *centralAux);
+      Fase(const char *arquivo, Central *centralAux);
       
       /// \brief Destrutor
       ~Fase(void);
