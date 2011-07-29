@@ -40,6 +40,10 @@ These are some of the features we would like to have in this game:
 
 A few of them are already supported.
 
+## Instructions for compilation
+
+To compile `tdm` using the provided Makefile you must have in the parent directory both [IrrLicht][0] (version 1.5.2) and [irrKlang][1] (version 1.3.0) trees unzipped and compiled. [IrrKlang][1] comes compiled by default and is ready for use, but [irrLicht][0] doesn't. To have it ready for use you should have `libglu1-mesa-dev` and `libxxf86vm-dev` installed on your system. Once this is done just type `make` on `tdm` project directory to get it compiled and then type ./tdm to run the game, selecting the video driver to be used.
+
 ## Licensing
 
 This software comes licensed under [GNU GPL version 3][3].
