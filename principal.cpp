@@ -42,7 +42,7 @@ void Principal::ConstroiTudo(void)
 
 	//pego o timer, para fazer o intervalo entre os ciclos
 	timer = device->getTimer();
-	
+
 	//crio o device de audio
 	soundEngine = irrklang::createIrrKlangDevice();
 	soundEngine->setDefault3DSoundMaxDistance(50);
@@ -97,7 +97,7 @@ void Principal::Roda()
          tempoAnterior = timer->getRealTime();
          //Atualizo o input
          input->Atualiza();
-     
+
          //mando os objetos se atualizarem
          list<void *>::Iterator lista;
          Objeto *temp = (Objeto *) central->PrimeiroObjeto(&lista);
@@ -106,10 +106,10 @@ void Principal::Roda()
 	         temp->Atualiza();
 	         temp = (Objeto *) central->ProximoObjeto(&lista);
          }
-     
+
          //vejo se houve colisão nos objetos
          list<void *>::Iterator primeiro;
-         list<void *>::Iterator segundo;   
+         list<void *>::Iterator segundo;
          Objeto *um = (Objeto *) central->PrimeiroObjeto(&primeiro);
          while (um != NULL)
          {
@@ -123,13 +123,13 @@ void Principal::Roda()
 		            dois->BateuNeste(um);
 	            }
 	            dois = (Objeto *) central->ProximoObjeto(&segundo);
-	         } 
+	         }
             um = (Objeto *) central->ProximoObjeto(&primeiro);
          }
          fase->Atualiza();
          interface->Atualiza();
          camera->Atualiza();
-     
+
          //retiro os mortos
          temp = (Objeto *) central->PrimeiroObjeto(&lista);
          while (temp != NULL)
@@ -142,10 +142,10 @@ void Principal::Roda()
 	         }
 	         else temp = (Objeto *) central->ProximoObjeto(&lista);
          }
-     
+
          //atualizo a posição para o som
          central->SoundEngine()->setListenerPosition(camera->Posicao(), camera->OlhandoPara());
-     
+
          device->getVideoDriver()->beginScene(true, true, SColor(255,100,101,140));
          device->getSceneManager()->drawAll();
          device->getGUIEnvironment()->drawAll();
@@ -155,16 +155,16 @@ void Principal::Roda()
       //se ainda não deu o tempo mínimo
       while (timer->getRealTime() - tempoAnterior < TEMPO_CICLO);
    }
-   
+
    list<void *>::Iterator lista;
    Objeto *obj = (Objeto *) central->PrimeiroObjeto(&lista);
-   
+
    while (obj != NULL)
      {
        delete obj;
        obj = (Objeto *) central->ProximoObjeto(&lista);
      }
-   
+
    delete input;
    delete interface;
    delete fase;
@@ -172,7 +172,7 @@ void Principal::Roda()
    delete camera;
    //soundEngine->drop();
    device->drop();
-   
+
 }
 
 //----------------------------------------------------------------------------
@@ -182,10 +182,10 @@ bool Principal::OnEvent(const SEvent &evento)
   if (evento.EventType == EET_KEY_INPUT_EVENT)
     //a tecla ESC mudou de status (pressionada/nao pressionada)
     if (evento.KeyInput.Key == KEY_ESCAPE){
-      device->closeDevice(); 
+      device->closeDevice();
       return true;
   }
- 
+
   return input->OnEvent(evento); //evento.KeyInput.Key, evento.KeyInput.PressedDown);
 }
 
@@ -198,5 +198,5 @@ Principal::Principal(void)
 
 //---------------------------------------------------------------------------------
 Principal::~Principal(void)
-{ 
+{
 }
