@@ -5,8 +5,8 @@ Target = tdm
 Sources = main.cpp
 
 # general compiler settings
-IRRDIR = ../irrlicht-1.5
-KLANGDIR = ../irrKlang-1.1.3
+IRRDIR = ../irrlicht-1.5.2
+KLANGDIR = ../irrKlang-1.3.0
 CXX = g++
 CPPFLAGS = -I$(IRRDIR)/include -I/usr/X11R6/include -I$(KLANGDIR)/include
 CXXFLAGS = -O3 -ffast-math
